@@ -1,3 +1,9 @@
 export default function lineCount(passage) {
-  return 0;
+  const passageArr = passage.split('\n')
+  return passageArr.length;
 }
+
+// function isHaiku(passage) {
+//  const haikuState = lineCount(passage) === 3 && other conditionals
+//  return haikuState;
+// }

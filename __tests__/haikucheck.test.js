@@ -6,5 +6,6 @@ describe('lineCount', () => {
     const numberOfLines = lineCount(newString);
     expect(numberOfLines).toEqual(1);
   });
+  
 
 });
