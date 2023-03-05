@@ -3,7 +3,15 @@ export default function lineCount(passage) {
   return passageArr.length;
 }
 
+export function syllableCount(passage) {
+  const syllablePattern = /([bcdfghjklmnpqrstvwxyz]*)([aeiouy]+[bcdfghjklmnpqrstvwxyz]*)*/gi
+  const foundSyllables = passage.match(syllablePattern);
+  return foundSyllables.length;
+}
+
+// const syllablePattern = /([bcdfghjklmnpqrstvwxyz]*)([aeiouy]+[bcdfghjklmnpqrstvwxyz]*)*/gi
+// String.prototype.match()
 // function isHaiku(passage) {
-//  const haikuState = lineCount(passage) === 3 && other conditionals
-//  return haikuState;
+//   const haikuState = lineCount(passage) === 3 && other conditionals
+//   return haikuState;
 // }

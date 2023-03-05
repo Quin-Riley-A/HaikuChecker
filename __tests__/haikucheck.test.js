@@ -1,4 +1,5 @@
 import lineCount from '../src/haikucheck';
+import syllableCount from '../src/haikucheck';
 
 describe('lineCount', () => {
   test('receiving an input of one line should return a result of one', () => {
@@ -12,5 +13,12 @@ describe('lineCount', () => {
     const numberOfLines = lineCount(newString);
     expect(numberOfLines).toEqual(3);
   });
+});
 
+describe('syllableCount', () => {
+  test('function will count and return the number of syllables in a given string input', () => {
+    const testString = "Test String";
+    const numberOfSyllables = syllableCount(testString);
+    expect(numberOfSyllables).toEqual(2);
+  });
 });
