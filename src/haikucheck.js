@@ -6,6 +6,7 @@ export default function lineCount(passage) {
 export function syllableCount(passage) {
   const syllablePattern = /([bcdfghjklmnpqrstvwxyz]*)([aeiouy]+[bcdfghjklmnpqrstvwxyz]*)*/gi
   const foundSyllables = passage.match(syllablePattern);
+  console.log(foundSyllables);
   return foundSyllables.length;
 }
 
@@ -15,3 +16,5 @@ export function syllableCount(passage) {
 //   const haikuState = lineCount(passage) === 3 && other conditionals
 //   return haikuState;
 // }
+
+//(?:[^laeiouy]es?|ed)$/
