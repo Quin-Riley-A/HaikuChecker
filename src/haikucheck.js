@@ -36,7 +36,7 @@ export default function lineCount(passage) {
       });
       lineSyllArr.reduce((lineSyllCount, runningSum) => lineSyllCount + runningSum, 0);
     });
-    if (syllableArr === [5,7,5]) { //make a real comparison!
+    if (syllableArr === [5,7,5]) {//syllableArr[0] === 5 && syllableArr[1] === 7 && syllableArr[2] === 5 && syllableArr.length === 3)
       return true;
     }
     else {
